@@ -9,33 +9,15 @@
 </head>
 <body>
     <form action="#" method="post" onsubmit="return validate();">
-    <h3>Sign in</h3>
-    <h5>Sign in with your user name and password</h5>
+    <h3 id="demo"></h3>
+    <h5>log out</h5>
 
     <label>Your username</label>
-    <input id="userName" type="text" for="username" placeholder="Enter username" required><br>
+    <input id="use" type="text" for="username"  required><br>
 
     <label>Your password</label>
-    <input id="password" type="password" for="username" placeholder="Enter password" required>
-
-    <div class="ola">
-
-        <div class="o">
-          <input type="checkbox"><label>Remember me</label>
-        </div>
-
-        <div>
-          <a href="#">Forgot password?</a>
-        </div>
-
-    </div>
-    <button id="submit" type="submit">Log in</button>
-
-    <div class="p">
-    <p>Not a member?</p>
-    <a href="#">Register here!</a>
-    </div>
+    <input id="pass" type="password" for="username" placeholder="Enter password" required>
     </form>
-    
+    <script src="scripts/validate.js"></script>
 </body>
 </html>

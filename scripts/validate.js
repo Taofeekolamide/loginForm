@@ -1,16 +1,27 @@
-var attempt = 3;
+
+
+function userName() {
+    document.getElementById("username").value = prompt("what is your name");
+}
+
+function passWord() {
+    document.getElementById("password").value = prompt("what is your password");
+}
+
 
 function validate() {
-    var username = document.getElementById("username").value;
-    var password = document.getElementById("password").value; 
-if (username == "ola" && password == "ola"){
-    alert("log in successfully");
-    window.location ="happy.html" 
-    return false
-}
+    let user = document.getElementById("username").value;
+    let pswrd = document.getElementById("password").value;
+
+    if (user == "ola" && pswrd == "ola55" ){
+        alert ("login successfully");
+        window.location = "happy.html"
+        return false
+    } 
+
 else{
 attempt--;
-alert("you have" + attempt + "attempt left");
+alert("you have " + attempt + " attempt left");
 window.location = "index.html"
 
 if(attempt == 0){

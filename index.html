@@ -9,15 +9,15 @@
     
 </head>
 <body>
-    <form  method="post" onsubmit="return validate();">
+      <form  method="post" onsubmit="return validate();">
     <h3>Sign in</h3>
     <h5>Sign in with your user name and password</h5>
 
     <label>Your username</label>
-    <input id="username" type="text" for="username" placeholder="Enter username" required><br>
+    <input id="username" onclick="userName()" type="text" for="username" placeholder="Enter username" required ><br>
 
     <label>Your password</label>
-    <input id="password" type="password" for="username" placeholder="Enter password" required>
+    <input id="password" onclick="passWord()" type="password" for="username" placeholder="Enter password" required >
 
     <div class="ola">
 
